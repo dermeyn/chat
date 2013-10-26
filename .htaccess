@@ -1,0 +1,7 @@
+<IfModule mod_proxy.c>
+	ProxyVia On
+	ProxyRequests Off
+	ProxyPass /chat/websocket/ http://localhost:3582/
+	ProxyPassReverse /chat/websocket/ http://localhost:3582/
+	ProxyPreserveHost on
+</IfModule>

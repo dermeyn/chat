@@ -39,7 +39,7 @@ class Boot extends Command {
 				new WsServer(
 						new DefaultWebsocket(new user)
 				)
-				, 8080
+				, 3582
 		);
 		
 		$server->run();
